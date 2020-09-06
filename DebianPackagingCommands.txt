@@ -1,0 +1,9 @@
+cd elfio-3.7
+dh clean
+dpkg-buildpackage -us -uc
+debsign
+
+cd ..
+lintian -i -I --show-overrides elfio_3.7-1_amd64.changes
+dupload -t mentors -f elfio_3.7-1_amd64.changes
+
