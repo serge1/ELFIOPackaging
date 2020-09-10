@@ -6,6 +6,14 @@
 %:
 	dh $@
 
+override_dh_update_autotools_config:
+
+override_dh_autoreconf:
+
+override_dh_auto_configure:
+
+override_dh_auto_build-indep:
+
 override_dh_auto_install:
-	dh_auto_install
-	rm -r ./debian/elfio/usr/bin
+
+override_dh_auto_test:

@@ -10,8 +10,7 @@ Vcs-Git: https://github.com/serge1/ELFIO.git
 
 Package: elfio
 Section: libdevel
-Architecture: any
-Multi-Arch: same
+Architecture: all
 Depends: ${misc:Depends}
 Description: C++ library for reading and generating ELF files
  ELFIO is a header-only C++ library intended for reading and generating
