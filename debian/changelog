@@ -1,5 +1,9 @@
 elfio (3.7-1) unstable; urgency=medium
 
   * Initial release (Closes: #839382)
+  * 'watch' file has been updated
+  * Passes lintian check with command line:
+    lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes \
+      --profile debian
 
  -- Serge Lamikhov-Center <to_serge@hotmail.com>  Sat, 05 Sep 2020 02:24:12 -0700

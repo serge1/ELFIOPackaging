@@ -1,5 +1,6 @@
 wget https://github.com/serge1/ELFIO/releases/download/Release_3.7/elfio-3.7.tar.gz
 tar xvzf elfio-3.7.tar.gz
+
 cd elfio-3.7
 cp -r ../debian .
 dh_make -i -y -f ../elfio-3.7.tar.gz
@@ -9,7 +10,7 @@ cd ..
 
 
 
-lintian -i -I --show-overrides elfio_3.7-1_amd64.changes
+lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes --profile debian
 dupload -t mentors -f elfio_3.7-1_amd64.changes
 
 ./configure
