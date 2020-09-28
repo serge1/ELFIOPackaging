@@ -1,9 +1,10 @@
 elfio (3.7-1) unstable; urgency=medium
 
-  * Initial release (Closes: #839382)
+  * Initial release (closes: #839382, #969789)
+  * 'copyright' name has been changed to Expat
   * 'watch' file has been updated
+  * doc-base control file added
   * Passes lintian check with command line:
-    lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes \
-      --profile debian
+    lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes
 
- -- Serge Lamikhov-Center <to_serge@hotmail.com>  Sat, 05 Sep 2020 02:24:12 -0700
+ -- Serge Lamikhov-Center <to_serge@hotmail.com>  Mon, 28 Sep 2020 11:00:12 -0200

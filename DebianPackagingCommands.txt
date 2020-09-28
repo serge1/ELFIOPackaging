@@ -7,10 +7,10 @@ dh_make -i -y -f ../elfio-3.7.tar.gz
 dpkg-buildpackage -us -uc
 debsign
 cd ..
+lintian -EviIL +pedantic --profile debian --show-overrides elfio_3.7-1_amd64.changes
 
+lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes
 
-
-lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes --profile debian
 dupload -t mentors -f elfio_3.7-1_amd64.changes
 
 ./configure

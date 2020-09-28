@@ -1,2 +1,4 @@
 elfio         usr/include
-doc/elfio.pdf usr/share/doc/elfio/
+doc/elfio.pdf usr/share/doc/elfio
+examples      usr/share/doc/elfio
+
