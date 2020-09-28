@@ -1,0 +1,8 @@
+Name: ELFIO
+Homepage: http://serge1.github.io/ELFIO
+Repository: https://github.com/serge1/ELFIO.git
+Repository-Browse: https://github.com/serge1/ELFIO
+Bug-Submit: https://github.com/serge1/ELFIO/issues
+Title: 'C++ library for reading and generating ELF files'
+Author:
+ - 2001-2020 by Serge Lamikhov-Center
