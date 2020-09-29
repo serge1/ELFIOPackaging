@@ -1,5 +1,5 @@
 # Compulsory line, this is a version 4 file
 version=4
 
-opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/elfio-$1\.tar\.gz/ \
-  https://github.com/Serge1/ELFIO/tags .*/?(\d\.\d)\.tar\.gz
+opts=pgpsigurlmangle=s/.+\/v?(\d\S+)\.tar\.gz\.asc/elfio-$1\.tar\.gz\.asc/ \
+  https://github.com/Serge1/ELFIO/releases/latest .*/?(\d\.\d)\.tar\.gz
