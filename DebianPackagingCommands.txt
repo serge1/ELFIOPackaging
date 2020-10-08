@@ -11,6 +11,8 @@ lintian -EviIL +pedantic --profile debian --show-overrides elfio_3.7-1_amd64.cha
 
 lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes
 
+gpg -ab  elfio_3.7.orig.tar.gz
+
 dupload -t mentors -f elfio_3.7-1_amd64.changes
 
 ./configure

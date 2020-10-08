@@ -1,0 +1,9 @@
+Document: elfio
+Title: C++ library for reading and generating ELF files
+Author: Serge Lamikhov-Center
+Abstract: ELFIO library tutorial and reference manual
+Section: Programming/C++
+
+Format: PDF
+Index: /usr/share/doc/elfio/elfio.pdf.gz
+Files: /usr/share/doc/elfio/elfio.pdf.gz
