@@ -1,6 +1,7 @@
-elfio (3.7-1) unstable; urgency=medium
+elfio (3.8-1) unstable; urgency=medium
 
   * Initial release (closes: #839382)
+  * new upstream version
   * 'copyright' name has been changed to Expat
   * 'watch' file has been updated
   * signing key has been added
@@ -8,6 +9,6 @@ elfio (3.7-1) unstable; urgency=medium
   * doc-base control file added
   * Passes lintian check with command line:
     lintian -EviIL +pedantic --profile debian --show-overrides \
-    elfio_3.7-1_amd64.changes
+    elfio_3.8-1_amd64.changes
 
  -- Serge Lamikhov-Center <to_serge@hotmail.com>  Mon, 28 Sep 2020 11:00:12 -0200

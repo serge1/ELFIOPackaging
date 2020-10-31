@@ -1,19 +1,19 @@
-wget https://github.com/serge1/ELFIO/releases/download/Release_3.7/elfio-3.7.tar.gz
-tar xvzf elfio-3.7.tar.gz
+wget https://github.com/serge1/ELFIO/releases/download/Release_3.8/elfio-3.8.tar.gz
+tar xvzf elfio-3.8.tar.gz
 
-cd elfio-3.7
+cd elfio-3.8
 cp -r ../debian .
-dh_make -i -y -f ../elfio-3.7.tar.gz
+dh_make -i -y -f ../elfio-3.8.tar.gz
 dpkg-buildpackage -us -uc
 debsign
 cd ..
-lintian -EviIL +pedantic --profile debian --show-overrides elfio_3.7-1_amd64.changes
+lintian -EviIL +pedantic --profile debian --show-overrides elfio_3.8-1_amd64.changes
 
-lintian --profile debian -i -I --show-overrides elfio_3.7-1_amd64.changes
+lintian --profile debian -i -I --show-overrides elfio_3.8-1_amd64.changes
 
-gpg -ab  elfio_3.7.orig.tar.gz
+gpg -ab  elfio_3.8.orig.tar.gz
 
-dupload -t mentors -f elfio_3.7-1_amd64.changes
+dupload -t mentors -f elfio_3.8-1_amd64.changes
 
 ./configure
 dh clean
